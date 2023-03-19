@@ -1,0 +1,20 @@
+import numpy as np
+import matplotlib.pyplot as plt
+ 
+  
+# creating the dataset
+data = {'EM':89, 'DM':96, 'Physics':80,
+        'Pythn':92}
+courses = list(data.keys())
+values = list(data.values())
+  
+fig = plt.figure(figsize = (10, 5))
+ 
+# creating the bar plot
+plt.bar(courses, values, color ='maroon',
+        width = 0.4)
+ 
+plt.xlabel("subjects")
+plt.ylabel("score")
+plt.title("marks scored in last semester")
+plt.show()
